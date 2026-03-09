@@ -6,7 +6,8 @@ This repository contains the *AIRELI* task for the Software Engineering lecture.
 
 Important notes before you start:
 
-- You will need to use a Github account to use Github Codespaces and [VS Code](https://code.visualstudio.com/) for the setup. Github Codespaces provide a free monthly allowance of 120 compute hours for basic and 180 hours for Pro accounts (get your free Github Pro account [here](https://education.github.com/pack) if you have not done so yet).
+- For the setup, you can either use Github Codespace (recommended, see setup below), or optionally, you can clone this repository and run yarn install and yarn run dev to get started on your local machine and IDE of your choice.
+To use Github Codespaces you will need a Github Account and VS Code for the setup. Github Codespaces provide a free monthly allowance of 120 compute hours for basic and 180 hours for Pro accounts (get your free Github Pro account here if you have not done so yet).
 - You will work on a task for **up to 1.5h or less if you finish earlier**.
 - You will submit:
   - Questionnaire after working on the task
