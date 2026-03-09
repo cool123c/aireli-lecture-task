@@ -57,4 +57,4 @@ apps/docs/.vitepress/dist/
 
 
 # Telemetry Logs
-telemetry.log
+# telemetry.log 
