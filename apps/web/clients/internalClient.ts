@@ -4,8 +4,17 @@ import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
 const registerUser = async (input: PlatformUserCreateInput): Promise<Pick<PlatformUser, "id"> | undefined | null> => {
-  // ToDo: Implement the registerUser function
-  return null
+  try {
+    const { data } = await axios.post('http://localhost:3001/register', input);
+    return data?.user ?? null;
+  } catch (error: any) {
+    if (error?.response?.status === 409) {
+      // Keep current modal behavior: null means user already exists.
+      return null;
+    }
+
+    throw error;
+  }
 };
 
 const loginUser = async (input: PlatformUserCreateInput) => {
